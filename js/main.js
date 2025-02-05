@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/react"
+
 (function ($) {
 	"use strict";
 	$(window).stellar({
@@ -326,3 +328,47 @@ document.getElementById(`video-play5`).addEventListener("click", function () {
 document.getElementById(`video-play6`).addEventListener("click", function () {
 	window.open("https://drive.google.com/file/d/19s0J6m0rugrsx9g5MsUe6av8Kr_DTVVa/view", "_blank");
 });
+
+// $(document).ready(function() {
+//   // Initialize the carousel
+//   $('.home-slider').owlCarousel({
+//     items: 1,
+//     loop: true,
+//     margin: 0,
+//     nav: true,
+//     dots: true,
+//     autoplay: true,
+//     autoplayTimeout: 5000,
+//     autoplayHoverPause: true,
+//     touchDrag: true,
+//     mouseDrag: true,
+//     pullDrag: true,
+//     freeDrag: false,
+//     responsiveClass: true,
+//     responsive: {
+//       0: {
+//         items: 1,
+//         nav: true
+//       },
+//       600: {
+//         items: 1,
+//         nav: true
+//       },
+//       1000: {
+//         items: 1,
+//         nav: true
+//       }
+//     }
+//   });
+
+//   // Prevent vertical scrolling on the carousel
+//   $('.home-slider').on('mousewheel DOMMouseScroll', function(e) {
+//     var delta = e.originalEvent.wheelDelta || -e.originalEvent.detail;
+//     if (delta > 0) {
+//       $(this).trigger('prev.owl');
+//     } else {
+//       $(this).trigger('next.owl');
+//     }
+//     e.preventDefault();
+//   });
+// });
